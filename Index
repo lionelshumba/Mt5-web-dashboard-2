@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MT5 Web Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f5f7fa;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .signal {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .buy { color: green; }
+    .sell { color: red; }
+  </style>
+</head>
+<body>
+  <h1>📊 MT5 Web Dashboard</h1>
+  
+  <div class="card">
+    <h2>Safe Buy/Sell</h2>
+    <div id="safe-signal" class="signal">Waiting for signal...</div>
+  </div>
+  
+  <div class="card">
+    <h2>Risky Buy/Sell</h2>
+    <div id="risky-signal" class="signal">Waiting for signal...</div>
+  </div>
+  
+  <p>🔄 Live updates will appear here once we connect MT5.</p>
+</body>
+</html>
